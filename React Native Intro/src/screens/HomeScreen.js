@@ -25,6 +25,10 @@ const HomeScreen = ({ navigation }) => {
         onPress={() => navigation.navigate("Counter")}
         title="Go to Counter"
       />
+<Button
+        onPress={() => navigation.navigate("Color")}
+        title="Go to Colors"
+      />
 
       <TouchableOpacity onPress={() => navigation.navigate("List")}>
         <Text>Another way to link to List Component</Text>
@@ -40,8 +44,8 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 70,
-    color: "#959",
-    backgroundColor: "#699",
+    color: "#149",
+    backgroundColor: "#939",
   },
 });
 
