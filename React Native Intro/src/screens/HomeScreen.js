@@ -5,8 +5,8 @@ const HomeScreen = ({ navigation }) => {
   // console.log(props.navigation);
 
   return (
-    <View>
-      <Text style={styles.text}>Hola Babbbby</Text>
+    <View style={styles.view}>
+      <Text style={styles.text}>Hola World</Text>
       <Button
         onPress={() => {navigation.navigate("Components"), console.log('console log messages show on your local terminal')}}
         title="Go to Components Demo"
@@ -20,6 +20,12 @@ const HomeScreen = ({ navigation }) => {
         onPress={() => navigation.navigate("Images")}
         title="Go to List Image Screen"
       />
+
+<Button
+        onPress={() => navigation.navigate("Counter")}
+        title="Go to Counter"
+      />
+
       <TouchableOpacity onPress={() => navigation.navigate("List")}>
         <Text>Another way to link to List Component</Text>
       </TouchableOpacity>
@@ -28,6 +34,10 @@ const HomeScreen = ({ navigation }) => {
 };
 
 const styles = StyleSheet.create({
+  view: {
+    alignItems:'center',
+    marginTop: 20
+  },
   text: {
     fontSize: 70,
     color: "#959",
