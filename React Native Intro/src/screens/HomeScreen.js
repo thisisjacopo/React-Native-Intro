@@ -29,11 +29,11 @@ const HomeScreen = ({ navigation }) => {
         onPress={() => navigation.navigate("Color")}
         title="Go to Colors Demo"
       />
-<Button
-        onPress={() => navigation.navigate("Square")}
-        title="Go to Sqare Demo"
-      />
 
+<Button
+        onPress={() => navigation.navigate("Text")}
+        title="Go to Text Demo"
+      />
       <TouchableOpacity onPress={() => navigation.navigate("List")}>
         <Text>Another way to link to List Component</Text>
       </TouchableOpacity>
